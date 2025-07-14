@@ -23,6 +23,6 @@ public class TransportController {
         if(response.getBody() == null || response.getBody().isEmpty()) {
           throw new ResponseStatusException(HttpStatus.NOT_FOUND,"No transports found");
         }
-        return transportService.retrieveTransportList();
+        return response;
     }
 }
